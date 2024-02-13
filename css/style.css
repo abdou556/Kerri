@@ -1,0 +1,223 @@
+html {
+    scroll-padding-top: 50px;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.max-width-500 {
+    max-width: 500px;
+}
+
+
+.text-main {
+    color: #e65f78 !important;
+}
+
+.bg-main {
+    background-color: #e65f78 !important;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    color: #e65f78;
+}
+
+/* home section  */
+.home {
+    background-image: url("../images/header-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.home .home_layer button:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.setting_icon {
+    top: 30%;
+    background-color: #2b2424;
+}
+
+
+
+.home_layer h1::after {
+    content: " |";
+    animation: typing 3s linear 1s infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        content: " G|";
+    }
+
+    6% {
+        content: " Gr|";
+    }
+
+    12% {
+        content: " Gra|";
+    }
+
+    18% {
+        content: " Grap|";
+    }
+
+    24% {
+        content: " Graph|";
+    }
+
+    30% {
+        content: " Graphi|";
+    }
+
+    36% {
+        content: " Graphic|";
+    }
+
+    42% {
+        content: " Graphic |";
+    }
+
+    48% {
+        content: " Graphic De|";
+    }
+
+    56% {
+        content: " Graphic Des|";
+    }
+
+    72% {
+        content: " Graphic Desi|";
+    }
+
+    78% {
+        content: " Graphic Desig|";
+    }
+
+    84% {
+        content: " Graphic Design|";
+    }
+
+    90% {
+        content: " Graphic Designe|";
+    }
+
+    100% {
+        content: " Graphic Designer|";
+    }
+}
+
+/*  end home section  */
+/* start section about */
+.icons i {
+    margin: 0 10px;
+    font-size: 23px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 10px;
+    transition: all .4s;
+}
+
+.icons i:hover {
+    border: 2px solid #e65f78;
+    scale: 1.2;
+    rotate: 360deg;
+    color: #e65f78;
+}
+
+/* start section about */
+
+/* ----------------Services Section------------ */
+.service_item h5 {
+    position: relative;
+}
+
+.service_item h5::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #e65f78;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+}
+
+.service_item:hover h5::after {
+    width: 70px;
+}
+
+/* ---------------- end Services Section ------------ */
+
+
+/* client section */
+.carousel-indicators [data-bs-target] {
+    background-color: #e65f78;
+    width: 12px;
+    height: 4px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.carousel-indicators .active {
+    width: 20px;
+}
+
+/* end client section */
+
+
+
+/* start Portfolio section */
+
+.nav-pills .nav-link {
+    color: black;
+    border-radius: 100px;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background-color: #e65f78;
+    color: #fff;
+}
+
+.work_item .work_item_layer {
+    background-color: rgba(0, 0, 0, 0 , 0);
+    transition: all 0.5s;
+}
+
+.work_item:hover .work_item_layer {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.work_item img {
+    transition: transform 0.3s;
+}
+
+.work_item:hover img {
+    transform: scale(1.2);
+}
+
+.work_item:hover .work_item_content {
+    top: 0 !important;
+    bottom: 0;
+}
+
+.work_item .work_item_content {
+    transition: all 0.3s;
+}
+
+/* end Portfolio section */
